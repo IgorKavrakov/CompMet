@@ -2,7 +2,7 @@
 CompMet: Metrics for Comparison of Time Histories
 
 Cite:
-Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparsion Metric for Time-histories. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
+Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
 
 CompMet is a Matlab-based computer code that computes metrics for comparison of two time-histories.
 The files constituting this code are included in CompMet.
