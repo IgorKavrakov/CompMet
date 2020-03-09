@@ -4,7 +4,7 @@ addpath(genpath('CompMet')); %Add the path of the code
 
 % The following script includes an example how to compare two signals. 
 % The script is based on the generic signals that are in:
-% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). CComparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
+% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
 % The signals are described in Eqs. 32-36 in the aforementioned article.
 
 % PLEASE CITE THE ARTICLE IF YOU INTEND TO USE THE METRICS.
