@@ -6,7 +6,7 @@
 % Guido Morgenthal (Chair of Modeling and Simulation of Structures, Bauhaus University Weimar) 
 % 
 % Please cite our work when you are you are using our software in your research or publications:
-% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparsion Metric for Time-histories. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
+% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
 
 % The code compares two time histories (X1 and X2), taking one as a reference (X1).
 % The CalculationProperties structure is explained in one of the examples.
