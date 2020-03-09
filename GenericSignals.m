@@ -4,7 +4,7 @@ addpath(genpath('CompMet')); %Add the path of the code
 
 % The following script includes an example how to compare two signals. 
 % The script is based on the generic signals that are in:
-% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparsion Metric for Time-histories. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
+% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). CComparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
 % The signals are described in Eqs. 32-36 in the aforementioned article.
 
 % PLEASE CITE THE ARTICLE IF YOU INTEND TO USE THE METRICS.
@@ -62,7 +62,7 @@ Prop.StationartyProperties.NSurogates=200; %Number of surrogates (Cf. Eq. 16-22)
 Prop.StationartyProperties.LocalAnalysis=0; %(Recommended:0) If this is enabled, the local stationarity analysis will be performed regardless of what discriminating statistics says (I.e. Theta in Eq. 14 does not matter).
 Prop.StationartyProperties.ConfidenceLevel=0.95; %Confidence level for wavelet surogates Based on Gamma distribution (cf. Eq. 16)
 Prop.StationartyProperties.g=2;              %g is exceeding factor for surrogate signals (cf. Eq. 22). 
-Prop.StationartyProperties.DiscriminatingStatistic='KLG'; %(Recommended:KLG) Discriminating statistic (KL, LG, KLG) - Kullback–Leibler, Log-Spectral. KLG - mixed.
+Prop.StationartyProperties.DiscriminatingStatistic='KLG'; %(Recommended:KLG) Discriminating statistic (KL, LG, KLG) - Kullbackâ€“Leibler, Log-Spectral. KLG - mixed.
 
 %Wavelet bispectrum metric properties
 Prop.WaveletBicoherenceProperties.Trange=[0 t(end)];     %Time for wavelet analysis (* Dependent on the region of interest)
@@ -75,7 +75,7 @@ Prop.WaveletBicoherenceProperties.Eps=0.2;               %Surrogates constant ph
 Prop.WaveletBicoherenceProperties.g=2;                   %Factor of exceedence (cf. Eq. 28)
 Prop.WaveletBicoherenceProperties.MaxNormPlot=1.5;       % This is maximum for the plot of the colorbar
 
-%Probability Distribution Metric Properties. Using Kernel method according to Botev (cf. Botev, Z., Grotowski, J., and Kroese, D. (2010). Kernel density estimation via diffusion. Ann.763 Stat., 38, 2916–2957)
+%Probability Distribution Metric Properties. Using Kernel method according to Botev (cf. Botev, Z., Grotowski, J., and Kroese, D. (2010). Kernel density estimation via diffusion. Ann.763 Stat., 38, 2916â€“2957)
 Prop.PDFProperties.Kerneldiscretization=2^12; %Discretization of the kernel result (should be power of 2) this is discretization of the integral
 Prop.PDFProperties.StandardScore=1;   %Comparison of the Standard Score of the PDFs (i.e. zero mean with normalized standard deviation). Otherwise =0 (full PDF). 
 Prop.PDFProperties.MinMax1=0;                  %For the kernel approximation Signal 1- min and max value (WARNING: w.r.t. Standard score, if selected) for approximation (usually this is automatically defined). Used in case of PDF unlimited  values (e.g. noiseless pure sine wave)
