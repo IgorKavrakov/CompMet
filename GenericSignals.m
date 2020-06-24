@@ -4,7 +4,7 @@ addpath(genpath('CompMet')); %Add the path of the code
 
 % The following script includes an example how to compare two signals. 
 % The script is based on the generic signals that are in:
-% Kavrakov, I., Kareem, A., and Morgenthal, G. (2020). Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811
+% Kavrakov, I., Kareem, A., and Morgenthal, G. 2020. Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech., 146 (9), 040200093. https://doi.org/10.1061/(ASCE)EM.1943-7889.0001811
 % The signals are described in Eqs. 32-36 in the aforementioned article.
 
 % PLEASE CITE THE ARTICLE IF YOU INTEND TO USE THE METRICS.
@@ -101,7 +101,7 @@ Prop.Plots.PDF=1;                    %Plot PDF
 Prop.Plots.FigWidth=16;             %Plot fig width [cm]
 Prop.Plots.FigDepth=10;              % Plot fig depth [cm]
 %% SECTION 3 CALCULATION 
-fprintf(['CompMet: Comparison Metrics for Time-Histories \nIgor Kavrakov, Ahsan Kareem, Guido Morgenthal 2020 (c) \nCite as: Kavrakov, I., Kareem A., and Morgenthal G. (2020). Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech. 10.1061/(ASCE)EM.1943-7889.0001811 \n\n']);
+fprintf(['CompMet: Comparison Metrics for Time-Histories \nIgor Kavrakov, Ahsan Kareem, Guido Morgenthal 2020 (c) \nCite as: Kavrakov, I., Kareem, A., and Morgenthal, G. 2020. Comparison Metrics for Time-histories: Application to Bridge Aerodynamics. J. Eng. Mech., 146 (9), 040200093. https://doi.org/10.1061/(ASCE)EM.1943-7889.0001811\n\n']);
 input('!!!!!!!!!!!!!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!!!!!!!!!!!!!\n\nThe following calculation is computationally expensive (due to plotting and the bispectrum metric).\nFor faster computation, turn off the bispectrum metric (Prop.Metrics.WaveletBicoherence=0) and wavelet/stationarity plotting.\n\nPress any key to continue or cancel (CTRL+C).');clc;
 %% Test Case 1- Phase shift 
 Prop.Name='TestCase1_Phase'; %Name of test case (It will create a directory).
