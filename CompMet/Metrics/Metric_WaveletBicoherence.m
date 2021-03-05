@@ -1,4 +1,4 @@
-function [OutStruct,StationartyAnalysis] = Metric_WaveletBicoherence(X1,X2,dt,WaveletAnalysis,WavletProperties,StationartyAnalysis,WaveletBicoherenceProperties,Plots)
+function [OutStruct] = Metric_WaveletBicoherence(X1,X2,dt,WaveletAnalysis,WavletProperties,WaveletBicoherenceProperties,Plots)
 % Calcuate Bicoherence Metric 
 % This file is part of CompMet.
 % CompMet is free software: you can redistribute it and/or modify

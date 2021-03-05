@@ -122,7 +122,7 @@ if isfield(CalculationProperties.Metrics,'Wavelet')&&CalculationProperties.Metri
    
    %Bicoherence metric
     if isfield(CalculationProperties.Metrics,'WaveletBicoherence')&&CalculationProperties.Metrics.WaveletBicoherence
-    [M.WaveletBicoherenceAnalysis,M.StationarityAnalysis]=Metric_WaveletBicoherence(X1,X2,dt,M.Wavelet,CalculationProperties.WavletProperties,M.StationarityAnalysis,CalculationProperties.WaveletBicoherenceProperties,CalculationProperties.Plots);
+    [M.WaveletBicoherenceAnalysis]=Metric_WaveletBicoherence(X1,X2,dt,M.Wavelet,CalculationProperties.WavletProperties,CalculationProperties.WaveletBicoherenceProperties,CalculationProperties.Plots);
     ID=ID+1;MetricsPlot(ID)=M.WaveletBicoherenceAnalysis.Value;Names{ID}='$M_{b}$';
     fprintf('Bicoherence Metric (b): %.2f\n', M.WaveletBicoherenceAnalysis.Value);        
     end
