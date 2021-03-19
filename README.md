@@ -6,7 +6,7 @@ Kavrakov, I., Kareem, A., and Morgenthal, G. 2020. Comparison Metrics for Time-h
 
 CompMet is a Matlab-based computer code that computes metrics for comparison of two time-histories.
 The files constituting this code are included in CompMet.
-Given to time-histories, X1 and X2, the code is simply called as:
+Given two time-histories, X1 and X2, the code is simply called as:
 
 [M]=CompMet(X1,X2,Properties);
 
